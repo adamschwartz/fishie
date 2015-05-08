@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>&shy;</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+  <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="./resources/style.css">
+</head>
+<body class="home">
+  <ol>
+    <li id="section-1" class="cover current" data-height="908" data-position="0">
+      <div id="container" class="wrapperx clearfix">
+        <ul id="scene" class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15">
+          <li class="layer for3d" data-depth="0.1"><div class="lay1 for3d"></div></li>
+          <li class="layer for3d" data-depth="0.2"><div class="lay2b for3d"></div></li>
+          <li class="layer for3d" data-depth="0.3"><div class="lay3 for3d"></div></li>
+          <li class="layer for3d" data-depth="0.2"><div class="lay4b for3d"></div></li>
+          <li class="layer for3d" data-depth="0.4"><div class="lay2a for3d"></div></li>
+          <li class="layer for3d" data-depth="0.5"><div class="lay4a for3d"></div></li>
+          <li class="layer for3d" data-depth="0.55"><div class="lay5 for3d"></div></li>
+          <li class="layer for3d" data-depth="0.3"><div class="lay9 for3d"></div></li>
+          <li class="layer for3d" data-depth="0.8"><div class="lay8 for3d"></div></li>
+          <li class="layer for3d" data-depth="0.9"><div class="lay7 for3d"></div></li>
+          <li class="layer for3d" data-depth="0.85"><div class="lay7a for3d"></div></li>
+        </ul>
+      </div>
+    </li>
+  </ol>
+  <script src="./resources/jquery.min.js"></script>
+  <script src="./resources/jquery-easing.js"></script>
+  <script src="./resources/jquery.parallax.js"></script>
+  <script>
+    function resizeWindow() {
+      $("#scene").css({
+        'height': ($(window).height())
+      });
+    }
+    $(document).ready(resizeWindow);
+    $(window).bind("resize", resizeWindow);
+    $('#scene').parallax();
+  </script>
+</body>
+</html>
